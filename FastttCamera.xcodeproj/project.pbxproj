@@ -18,6 +18,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C252FE61AA34902002F5A30 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		9C252FE81AA34902002F5A30 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		9C252FE91AA34902002F5A30 /* Profile.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
+		9C252FEA1AA34902002F5A30 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		9C252FEB1AA34902002F5A30 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		9C252FED1AA34902002F5A30 /* Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Application.xcconfig; sourceTree = "<group>"; };
+		9C252FEE1AA34902002F5A30 /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		9C252FEF1AA34902002F5A30 /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = StaticLibrary.xcconfig; sourceTree = "<group>"; };
+		9C252FF11AA34902002F5A30 /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		9C252FF21AA34902002F5A30 /* iOS-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		9C252FF31AA34902002F5A30 /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		9C252FF41AA34902002F5A30 /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		9C252FF61AA34902002F5A30 /* Mac-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Application.xcconfig"; sourceTree = "<group>"; };
+		9C252FF71AA34902002F5A30 /* Mac-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Base.xcconfig"; sourceTree = "<group>"; };
+		9C252FF81AA34902002F5A30 /* Mac-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
+		9C252FF91AA34902002F5A30 /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
+		9C252FFA1AA34902002F5A30 /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		9C252FFB1AA34902002F5A30 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9CD626051A9FB24C006B46BD /* FastttCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FastttCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD626091A9FB24C006B46BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CD6260A1A9FB24C006B46BD /* FastttCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FastttCamera.h; sourceTree = "<group>"; };
@@ -41,10 +59,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C252FE41AA34902002F5A30 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				9C252FE51AA34902002F5A30 /* Base */,
+				9C252FF01AA34902002F5A30 /* iOS */,
+				9C252FF51AA34902002F5A30 /* Mac OS X */,
+				9C252FFB1AA34902002F5A30 /* README.md */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		9C252FE51AA34902002F5A30 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9C252FE61AA34902002F5A30 /* Common.xcconfig */,
+				9C252FE71AA34902002F5A30 /* Configurations */,
+				9C252FEC1AA34902002F5A30 /* Targets */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9C252FE71AA34902002F5A30 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				9C252FE81AA34902002F5A30 /* Debug.xcconfig */,
+				9C252FE91AA34902002F5A30 /* Profile.xcconfig */,
+				9C252FEA1AA34902002F5A30 /* Release.xcconfig */,
+				9C252FEB1AA34902002F5A30 /* Test.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		9C252FEC1AA34902002F5A30 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				9C252FED1AA34902002F5A30 /* Application.xcconfig */,
+				9C252FEE1AA34902002F5A30 /* Framework.xcconfig */,
+				9C252FEF1AA34902002F5A30 /* StaticLibrary.xcconfig */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		9C252FF01AA34902002F5A30 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9C252FF11AA34902002F5A30 /* iOS-Application.xcconfig */,
+				9C252FF21AA34902002F5A30 /* iOS-Base.xcconfig */,
+				9C252FF31AA34902002F5A30 /* iOS-Framework.xcconfig */,
+				9C252FF41AA34902002F5A30 /* iOS-StaticLibrary.xcconfig */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		9C252FF51AA34902002F5A30 /* Mac OS X */ = {
+			isa = PBXGroup;
+			children = (
+				9C252FF61AA34902002F5A30 /* Mac-Application.xcconfig */,
+				9C252FF71AA34902002F5A30 /* Mac-Base.xcconfig */,
+				9C252FF81AA34902002F5A30 /* Mac-DynamicLibrary.xcconfig */,
+				9C252FF91AA34902002F5A30 /* Mac-Framework.xcconfig */,
+				9C252FFA1AA34902002F5A30 /* Mac-StaticLibrary.xcconfig */,
+			);
+			path = "Mac OS X";
+			sourceTree = "<group>";
+		};
 		9CD625FB1A9FB24C006B46BD = {
 			isa = PBXGroup;
 			children = (
 				9CD626071A9FB24C006B46BD /* FastttCamera */,
+				9C252FE41AA34902002F5A30 /* Configuration */,
 				9CD626061A9FB24C006B46BD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -174,6 +258,7 @@
 /* Begin XCBuildConfiguration section */
 		9CD626191A9FB24C006B46BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C252FE81AA34902002F5A30 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -219,6 +304,7 @@
 		};
 		9CD6261A1A9FB24C006B46BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C252FEA1AA34902002F5A30 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -258,6 +344,7 @@
 		};
 		9CD6261C1A9FB24C006B46BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C252FF31AA34902002F5A30 /* iOS-Framework.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -274,6 +361,7 @@
 		};
 		9CD6261D1A9FB24C006B46BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C252FF31AA34902002F5A30 /* iOS-Framework.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
