@@ -96,10 +96,13 @@ CGFloat const kFocusSquareSize = 50.f;
     return UIInterfaceOrientationMaskAll;
 }
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-implementations"
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
     [self _setPreviewVideoOrientation];
 }
+#pragma clang diagnostic pop
 
 #pragma mark - Taking a Photo
 
